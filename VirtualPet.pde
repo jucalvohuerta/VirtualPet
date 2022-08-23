@@ -5,8 +5,6 @@ background(#3c4748);
 }
 
 void draw () {
-  
-// leaves
 fill(#5e6f29);
 noStroke();
 rotateZ(radians(20));
@@ -24,7 +22,6 @@ rotateZ(radians(-20));
 ellipse(500,600,630,250);
 rotateZ(-radians(-20));
 
-//rotate tardigrade
 rotateZ(radians(10));
 
 int teteX = 260+100;
@@ -50,21 +47,8 @@ ellipse(feetX+130 -30,feetY+20 -20,75,50);
 ellipse(feetX+260 -30,feetY,75,50);
 ellipse(feetX+400 -30,feetY-20 -20,75,50);
 
-// corps
-noStroke();
-fill(#a99575);
-rotateZ(PI/36);
-ellipse(teteX+330,teteY,600,250);
-
           // les pattes de devant
 fill(#a99575);
-
-// feet
-noStroke();
-ellipse(feetX,feetY,75,50);
-ellipse(feetX+130,feetY+20,75,50);
-ellipse(feetX+260,feetY,75,50);
-ellipse(feetX+400,feetY-20,75,50);
 
 // legs
 stroke(#74664f);
@@ -75,15 +59,29 @@ ellipse(legX+260,legY,100,150);
 ellipse(legX+400,legY-20,100,150);
 noStroke();
 
+// feet
+noStroke();
+ellipse(feetX,feetY,75,50);
+ellipse(feetX+130,feetY+20,75,50);
+ellipse(feetX+260,feetY,75,50);
+ellipse(feetX+400,feetY-20,75,50);
+
 fill(#a99575);
 strokeWeight(1);
 stroke(#928065);
 
-// tête
+// tete
 //stroke(#74664f);
-ellipse(teteX,teteY,200,180);    // tête
+ellipse(teteX,teteY,200,180);    // tete
 noFill();
 stroke(#74664f);
 strokeWeight(20);
 ellipse(teteX-30,teteY,50,50);    // bouche
+
+// corps
+noStroke();
+fill(#a99575);
+rotateZ(PI/36);
+ellipse(teteX+330,teteY,600,250);
+
 }
