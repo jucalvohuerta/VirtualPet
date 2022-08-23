@@ -5,7 +5,7 @@ background(#3c4748);
 }
 
 void draw () {
-fill(#5e6f29);
+/* fill(#5e6f29);
 noStroke();
 rotateZ(radians(20));
 ellipse(600,600,700,250);
@@ -20,7 +20,7 @@ fill(#c6c57b);
 noStroke();
 rotateZ(radians(-20));
 ellipse(500,600,630,250);
-rotateZ(-radians(-20));
+rotateZ(-radians(-20));  */
 
 rotateZ(radians(10));
 
@@ -71,8 +71,8 @@ strokeWeight(1);
 stroke(#928065);
 
 // tete
-//stroke(#74664f);
 ellipse(teteX,teteY,200,180);    // tete
+
 noFill();
 stroke(#74664f);
 strokeWeight(20);
